@@ -29,6 +29,8 @@ curl --head --silent google.com | grep -i content-length | cut --delimiter=' ' -
 tail -n1 commands.sh >> a.sh | bash a.sh 
 
 
+#At this point excercise.sh
+
 
 
 #brightness tampering
@@ -42,14 +44,12 @@ echo 3409 > brightness # doesn't work
 
 echo 3409 | tee brightness
 
-% what if I do set brightness param more than allowed value
+# what if I do set brightness param more than allowed value
 
 cd /sys/class/leds/plaatfotm\:\:mute
 cat brightness
-
-
-# Light blinking for email
-
+cat trigger
+# Light blinking for email (for hw)
 
 
 # LOOPS in bash
